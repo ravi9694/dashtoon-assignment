@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comic Creator</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1>DASHTOON Comic Creator</h1>
+  </header>
+  
+  <main>
+    <p class="warning">You can generate maximum 10 panel</p>
+    <div class="form-container">
+      <form id="comicForm" onsubmit="event.preventDefault(); generatePanel()">
+        <input type="text" id="textInput" placeholder="Enter text for panel">
+        <button type="submit">Generate Panel</button>
+      </form>
+    </div>
+    
+    <div id="error" class="error"></div>
+    
+    <div id="panelContainer" class="panel-container"></div>
+  </main>
+
+  <footer>
+    <p class="footer-p"><span>copyright@</span> Ravi Kumar</p>
+    <p class="footer-p2">IIT Guwahati</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
